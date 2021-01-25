@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Glassmorphism Credit Card Form</title>
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <div class="card">
+        <form>
+          <div class="card__row">
+            <h1 class="card__title">Enter Card Information</h1>
+
+            <i id="cardBrand" class="fab fa-cc-visa"></i>
+          </div>
+          <div class="card__row">
+            <div class="card__chip">
+              <img src="img/chip.svg" alt="chip" />
+            </div>
+            <div class="card__wi-fi">
+              <img src="img/wifi.svg" alt="" />
+            </div>
+            <div class="card__number">
+              <label for="cardNumber" class="card__label cardNumber"
+                >Card Number</label
+              ><input
+                type="text"
+                class="card__input card__input--large"
+                id="cardNumber"
+                placeholder="xxxx &nbsp;&nbsp; xxxx &nbsp;&nbsp; xxxx &nbsp;&nbsp; xxxx"
+              />
+            </div>
+          </div>
+          <div class="card__row">
+            <div>
+              <label for="cardExpiry" class="card__label">Valid Thru :</label
+              ><input
+                type="text"
+                class="card__input"
+                id="cardExpiry"
+                placeholder="M &nbsp;/ &nbsp;Y"
+              />
+            </div>
+            <div>
+              <label for="cardCcv" class="card__label">CCV :</label
+              ><input
+                type="text"
+                class="card__input"
+                id="cardCcv"
+                placeholder="X &nbsp;X &nbsp;X"
+              />
+            </div>
+          </div>
+          <div class="card__row">
+            <div class="name-holder">
+              <label for="Name" class="card__label">Card Holder :</label
+              ><input
+                type="text"
+                class="card__input"
+                id="CardHolder"
+                placeholder="Your Full Name"
+              />
+            </div>
+            <button class="btn" type="submit">Confirm</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <p class="inspired">
+      Inspired by : &nbsp;<a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=jEa9YyRqE1U&ab_channel=codeSTACKr"
+        >codeSTACKr </a
+      >&nbsp;!&nbsp; Code on &nbsp;<a
+        target="_blank"
+        href="https://codepen.io/curley"
+        >&nbsp;<img src="img/github.svg" alt="Github" />
+      </a>
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src="main.js"></script>
+    <script src="card.js"></script>
+  </body>
+</html>
